@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20ToolKit/reservedCard.uss?fileID=7433441132597879392&amp;guid=30071d9c81190104088a081d3701a315&amp;type=3#reservedCard"/>
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255); width: 1920px; height: 1080px; position: absolute; top: 0; left: 0;"/>
+    <ui:VisualElement name="Title" style="position: absolute; height: 153px; width: 1152px; top: 0; left: 401px; background-color: rgb(217, 232, 255);">
+        <ui:Label text="Summary" style="height: 142px; width: 1145px; font-size: 78px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    </ui:VisualElement>
+    <ui:Label text="2:00 pm" name="Time" style="position: absolute; width: 134px; left: 1638px; top: 40px; font-size: 41px; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    <ui:Button text="←" name="BackButton" style="position: absolute; left: 94px; top: 150px; width: 90px; height: 90px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 52px; color: rgb(0, 0, 0); background-color: rgb(217, 232, 255); border-top-left-radius: 45px; border-top-right-radius: 45px; border-bottom-left-radius: 45px; border-bottom-right-radius: 45px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-color: rgb(0, 0, 0);"/>
+    <ui:Label text="Your kit includes the following items:" name="KitPrompt" style="position: absolute; left: 360px; top: 205px; width: 1200px; height: 60px; font-size: 40px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    <ui:VisualElement name="HeadsetItem" style="position: absolute; left: 400px; top: 310px; width: 380px; height: 380px;">
+        <ui:Label text="Headset" style="height: 50px; font-size: 34px; -unity-text-align: middle-center; color: rgb(0, 0, 0);"/>
+        <ui:Image name="HeadsetImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured&quot;);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="ControllersItem" style="position: absolute; left: 800px; top: 310px; width: 380px; height: 380px;">
+        <ui:Label text="Controllers" style="height: 50px; font-size: 34px; -unity-text-align: middle-center; color: rgb(0, 0, 0);"/>
+        <ui:Image name="ControllersImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20ToolKit/Images/images%20(2).jpg?fileID=2800000&amp;guid=368932c7c85e0014b947d6e2284540ea&amp;type=3#images (2)&quot;);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="ChargerItem" style="position: absolute; left: 1200px; top: 310px; width: 380px; height: 380px; background-color: rgb(246, 247, 249);">
+        <ui:Label text="Charger" style="height: 50px; font-size: 34px; -unity-text-align: middle-center; color: rgb(0, 0, 0);"/>
+        <ui:Image name="ChargerImage" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20ToolKit/Images/51iWP09c9HL.jpg?fileID=2800000&amp;guid=eccfa0674246ba94a8ba04a7dbe7c0c5&amp;type=3#51iWP09c9HL&quot;);"/>
+    </ui:VisualElement>
+    <ui:Label text="Borrowing period selected:" name="PeriodPrompt" style="position: absolute; left: 560px; top: 735px; width: 800px; height: 50px; font-size: 34px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    <ui:Label text="90 min" name="SelectedPeriod" style="position: absolute; left: 865px; top: 790px; width: 190px; height: 80px; font-size: 28px; -unity-text-align: middle-center; -unity-font-style: bold; background-color: rgb(217, 217, 217); color: rgb(0, 0, 0);"/>
+    <ui:Button text="Complete" name="CompleteButton" style="position: absolute; left: 770px; top: 900px; width: 380px; height: 120px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgb(0, 140, 255); color: rgb(0, 0, 0); font-size: 44px; -unity-font-style: bold;"/>
+</ui:UXML>

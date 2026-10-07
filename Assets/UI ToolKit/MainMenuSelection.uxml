@@ -1,0 +1,39 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20ToolKit/reservedCard.uss?fileID=7433441132597879392&amp;guid=30071d9c81190104088a081d3701a315&amp;type=3#reservedCard"/>
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-color: rgb(255, 255, 255); width: 1920px; height: 1080px; position: absolute; top: 0; left: 0;"/>
+    <ui:VisualElement name="Title" style="position: absolute; height: 153px; width: 1152px; top: 0; left: 401px; background-color: rgb(217, 232, 255);">
+        <ui:Label text="Quest 3 Kiosk" style="height: 142px; width: 1145px; font-size: 78px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    </ui:VisualElement>
+    <ui:Label text="2:00 pm" name="Time" style="position: absolute; width: 134px; left: 1638px; top: 40px; font-size: 41px; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    <ui:Label text="ID: 0217895" name="UserId" style="position: absolute; left: 330px; top: 200px; width: 400px; font-size: 32px; -unity-font-style: italic; color: rgb(0, 0, 0);"/>
+    <ui:VisualElement name="ReservedItem" class="ReservedCard">
+        <ui:Image source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" style="position: absolute; height: 212px; width: 319px; top: 0; left: 0;"/>
+        <ui:Label text="Reserved" class="labelStyle"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="AvailableItem" class="ReservedCard" style="left: 805px;">
+        <ui:Image name="Image" style="background-image: url(&quot;project://database/Assets/UI%20ToolKit/Images/images%20(1).jpg?fileID=2800000&amp;guid=ac495318fcb70b842b5d4a007f48cb3d&amp;type=3#images (1)&quot;); position: absolute; height: 226px; width: 324px;"/>
+        <ui:Label text="Available" style="bottom: 0; position: absolute; width: 169px; height: 56px; font-size: 26px; -unity-text-align: middle-center; background-color: rgb(217, 217, 217); color: rgb(0, 0, 0); -unity-font-style: bold;"/>
+        <ui:Button text="Select" name="SelectButton" style="position: absolute; top: 230px; left: 174px; width: 152px; height: 55px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgb(84, 255, 122); color: rgb(0, 0, 0); -unity-font-style: bold; -unity-text-align: lower-center; white-space: nowrap; font-size: 17px;">
+            <ui:Image style="position: absolute; height: 41px; width: 49px; top: 0; left: 50px; background-image: url(&quot;project://database/Assets/UI%20ToolKit/Images/free-add-to-cart-icon-3046-thumb.png?fileID=2800000&amp;guid=66e801e7bf05edf4d9b546cd1053d323&amp;type=3#free-add-to-cart-icon-3046-thumb&quot;);"/>
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement name="ReservedItem2" class="ReservedCard" style="left: 1284px;">
+        <ui:Image source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" style="position: absolute; height: 212px; width: 319px; top: 0; left: 0;"/>
+        <ui:Label text="Reserved" class="labelStyle"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="ChargingItem" class="ReservedCard" style="top: 669px;">
+        <ui:Image source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" style="position: absolute; height: 212px; width: 319px; top: 0; left: 0;"/>
+        <ui:Label text="Charging &#10;(Ready in 20 min)" class="labelStyle" style="font-size: 21px; background-color: rgb(255, 255, 0);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="ChargingItem2" class="ReservedCard" style="left: 805px; top: 669px;">
+        <ui:Image source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" style="position: absolute; height: 212px; width: 319px; top: 0; left: 0;"/>
+        <ui:Label text="Charging &#10;(Ready in 5 min)" class="labelStyle" style="font-size: 21px; background-color: rgb(255, 255, 0);"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="LoanedItem" class="ReservedCard" style="left: 1284px; top: 669px;">
+        <ui:Image source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" style="position: absolute; height: 212px; width: 319px; top: 0; left: 0;"/>
+        <ui:Label text="Loaned" class="labelStyle"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="SelectionPopup" style="position: absolute; left: 557px; top: 142px; width: 765px; height: 211px; background-color: rgb(176, 255, 214); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-top-color: rgb(0, 145, 255); border-right-color: rgb(0, 145, 255); border-bottom-color: rgb(0, 145, 255); border-left-color: rgb(0, 145, 255);">
+        <ui:Label text="You have selected Kit #2" name="SelectionLabel" style="flex-grow: 1; font-size: 44px; -unity-text-align: middle-center; -unity-font-style: bold; color: rgb(0, 0, 0);"/>
+    </ui:VisualElement>
+</ui:UXML>
