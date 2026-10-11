@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss"/>
+    <ui:VisualElement name="LastMainMenuScreen" class="screen">
+        <ui:VisualElement name="Title" class="title-bar">
+            <ui:Label text="Quest 3 Kiosk" class="title-text"/>
+        </ui:VisualElement>
+        <ui:Label text="2:00 pm" name="Time" class="clock"/>
+        <ui:Label text="&lt;i&gt;ID: 0217895&lt;/i&gt;" name="UserId" class="user-id"/>
+        <ui:Label text="&lt;b&gt;Hello&lt;/b&gt; &lt;i&gt;Renata&lt;/i&gt;&lt;b&gt;!&lt;/b&gt;" name="HiUser" class="hi-user"/>
+        <ui:VisualElement name="Kit1Card" class="kit-card pos-1">
+            <ui:Image name="Kit1Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
+            <ui:Label name="Kit1Status" text="Reserved" class="kit-status status-gray"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Kit2Card" class="kit-card pos-2">
+            <ui:Image name="Kit2Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
+            <ui:Label name="Kit2Status" text="Reserved" class="kit-status status-gray"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Kit3Card" class="kit-card pos-3">
+            <ui:Image name="Kit3Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
+            <ui:Label name="Kit3Status" text="Reserved" class="kit-status status-gray"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Kit4Card" class="kit-card pos-4">
+            <ui:Image name="Kit4Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
+            <ui:Label name="Kit4Status" text="Charging&#10;(Ready in 20 min)" class="kit-status status-yellow"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Kit5Card" class="kit-card pos-5">
+            <ui:Image name="Kit5Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
+            <ui:Label name="Kit5Status" text="Reserved and Charging&#10;(Ready in 5 min)" class="kit-status status-yellow"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="Kit6Card" class="kit-card pos-6">
+            <ui:Image name="Kit6Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
+            <ui:Label name="Kit6Status" text="Loaned" class="kit-status status-gray"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

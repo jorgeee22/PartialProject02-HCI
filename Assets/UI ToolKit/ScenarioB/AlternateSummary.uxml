@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss?fileID=7433441132597879392&amp;guid=66f575777fdbbdb498ec4d30159dfbfb&amp;type=3#scenarioB"/>
+    <ui:VisualElement name="AlternateSummaryScreen" class="screen">
+        <ui:VisualElement name="Title" class="title-bar">
+            <ui:Label text="Summary" class="title-text"/>
+        </ui:VisualElement>
+        <ui:Label text="2:00 pm" name="Time" class="clock"/>
+        <ui:Button name="BackButton" text="←" class="back-btn"/>
+        <ui:Label name="SummaryHeading" text="Your kit includes the following items:" class="heading"/>
+        <ui:VisualElement name="Items" class="items-row">
+            <ui:VisualElement name="ItemHeadset" class="item">
+                <ui:Label text="Headset" class="item-label"/>
+                <ui:Image name="HeadsetImage" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="item-image"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="ItemControllers" class="item">
+                <ui:Label text="Controllers" class="item-label"/>
+                <ui:Image name="ControllersImage" source="project://database/Assets/UI%20ToolKit/Images/images%20(2).jpg?fileID=2800000&amp;guid=368932c7c85e0014b947d6e2284540ea&amp;type=3#images (2)" class="item-image"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="ItemCharger" class="item">
+                <ui:Label text="Charger" class="item-label"/>
+                <ui:Image name="ChargerImage" source="project://database/Assets/UI%20ToolKit/Images/51iWP09c9HL.jpg?fileID=2800000&amp;guid=eccfa0674246ba94a8ba04a7dbe7c0c5&amp;type=3#51iWP09c9HL" class="item-image"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ChargeInfo" class="charge-info">
+            <ui:Label text="Time until fully charged:" class="charge-label"/>
+            <ui:Label name="ChargeTime" text="5 min" class="charge-time"/>
+        </ui:VisualElement>
+        <ui:Button name="ContinueButton" text="Continue" class="btn btn-blue continue-btn"/>
+    </ui:VisualElement>
+</ui:UXML>

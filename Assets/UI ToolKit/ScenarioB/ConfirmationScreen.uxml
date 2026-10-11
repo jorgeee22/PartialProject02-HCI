@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss"/>
+    <ui:VisualElement name="ConfirmationScreen" class="screen">
+        <ui:VisualElement name="Title" class="title-bar">
+            <ui:Label text="All Done!" class="title-text"/>
+        </ui:VisualElement>
+        <ui:Label text="2:00 pm" name="Time" class="clock"/>
+        <ui:Image name="ConfirmImage" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="confirm-image"/>
+        <ui:Label name="ConfirmText" class="confirm-text" text="You can come back in 5 minutes once &lt;b&gt;Kit No. 5&lt;/b&gt; is fully charged."/>
+        <ui:Button name="DoneButton" text="Done" class="btn btn-blue continue-btn"/>
+    </ui:VisualElement>
+</ui:UXML>

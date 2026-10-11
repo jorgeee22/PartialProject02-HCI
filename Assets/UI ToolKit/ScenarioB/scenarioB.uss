@@ -1,0 +1,57 @@
+/* Escenario B (sin disponibilidad). Colores/medidas base tomados de MainMenu.uxml de Jorge. */
+
+.screen { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; background-color: rgb(255,255,255); }
+.title-bar { position: absolute; top: 0; left: 401px; width: 1152px; height: 153px; background-color: rgb(217,232,255); }
+.title-text { width: 100%; height: 100%; font-size: 78px; -unity-font-style: bold; -unity-text-align: middle-center; }
+.clock { position: absolute; top: 40px; left: 1638px; width: 200px; font-size: 41px; -unity-font-style: bold; }
+.user-id { position: absolute; top: 185px; left: 330px; font-size: 32px; }
+.hi-user { position: absolute; top: 171px; left: 746px; width: 500px; height: 84px; font-size: 62px; }
+
+/* Tarjetas de kit (mismas posiciones que MainMenu de Jorge) */
+.kit-card { position: absolute; width: 320px; height: 274px; }
+.pos-1 { left: 319px;  top: 292px; }
+.pos-2 { left: 805px;  top: 292px; }
+.pos-3 { left: 1284px; top: 292px; }
+.pos-4 { left: 319px;  top: 669px; }
+.pos-5 { left: 805px;  top: 669px; }
+.pos-6 { left: 1284px; top: 669px; }
+.kit-image { position: absolute; top: 0; left: 0; width: 320px; height: 212px; }
+.kit-status { position: absolute; bottom: 0; left: 0; width: 320px; height: 62px; font-size: 26px; -unity-font-style: bold; -unity-text-align: middle-center; }
+.status-gray   { background-color: rgb(217,217,217); }
+.status-yellow { background-color: rgb(255,255,0); font-size: 21px; }
+
+/* Botones */
+.btn { height: 100px; width: 362px; font-size: 36px; -unity-font-style: bold; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; }
+.btn-blue { background-color: rgb(0,122,255); color: rgb(0,0,0); }
+.btn-gray { background-color: rgb(235,235,235); color: rgb(0,0,0);
+            border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;
+            border-top-color: rgb(0,0,0); border-right-color: rgb(0,0,0); border-bottom-color: rgb(0,0,0); border-left-color: rgb(0,0,0); }
+.back-btn { position: absolute; top: 165px; left: 90px; width: 96px; height: 96px; font-size: 52px; color: rgb(0,0,0);
+            background-color: rgb(217,232,255);
+            border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;
+            border-top-color: rgb(0,0,0); border-right-color: rgb(0,0,0); border-bottom-color: rgb(0,0,0); border-left-color: rgb(0,0,0);
+            border-top-left-radius: 48px; border-top-right-radius: 48px; border-bottom-left-radius: 48px; border-bottom-right-radius: 48px; }
+.continue-btn { position: absolute; top: 915px; left: 779px; }
+
+/* Overlay "Useful step" (el menu se ve tenue detras, como en Figma) */
+.hidden { display: none; }
+.overlay { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; background-color: rgba(225,225,225,0.88); }
+.overlay-text { position: absolute; top: 220px; left: 505px; width: 870px; font-size: 48px; -unity-text-align: upper-left; white-space: normal; color: rgb(0,0,0); }
+.overlay-btn-1 { position: absolute; top: 700px; left: 505px; }
+.overlay-btn-2 { position: absolute; top: 700px; left: 1004px; }
+
+/* Alternate summary */
+.heading { position: absolute; top: 205px; left: 0; width: 1920px; font-size: 40px; -unity-font-style: bold; -unity-text-align: middle-center; }
+.items-row { position: absolute; top: 340px; left: 380px; width: 1220px; flex-direction: row; justify-content: space-between; }
+.item { width: 380px; align-items: center; }
+.item-label { font-size: 28px; margin-bottom: 10px; -unity-text-align: middle-center; }
+.item-image { width: 360px; height: 330px; }
+.charge-info { position: absolute; top: 740px; left: 710px; width: 500px; align-items: center; }
+.charge-label { font-size: 30px; -unity-font-style: bold; }
+.charge-time { width: 190px; height: 80px; margin-top: 12px; font-size: 28px; -unity-font-style: bold; -unity-text-align: middle-center;
+               border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px;
+               border-top-color: rgb(0,0,0); border-right-color: rgb(0,0,0); border-bottom-color: rgb(0,0,0); border-left-color: rgb(0,0,0); }
+
+/* Confirmation */
+.confirm-image { position: absolute; top: 300px; left: 260px; width: 700px; height: 490px; background-color: rgb(217,232,255); }
+.confirm-text { position: absolute; top: 440px; left: 1130px; width: 520px; font-size: 54px; -unity-font-style: bold; white-space: normal; }
