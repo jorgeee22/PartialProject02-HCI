@@ -1,39 +1,39 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss"/>
+    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss?fileID=7433441132597879392&amp;guid=66f575777fdbbdb498ec4d30159dfbfb&amp;type=3#scenarioB"/>
     <ui:VisualElement name="UnavailableMainMenuScreen" class="screen">
         <ui:VisualElement name="Title" class="title-bar">
             <ui:Label text="Quest 3 Kiosk" class="title-text"/>
         </ui:VisualElement>
         <ui:Label text="2:00 pm" name="Time" class="clock"/>
+        <ui:Button text="Reset Scenarios" name="ResetButton" parse-escape-sequences="false" style="width: 10%; height: 5%; left: 85%; top: 10%; font-size: 22px; -unity-font-style: bold; background-color: rgb(0, 116, 255);"/>
         <ui:Label text="&lt;i&gt;ID: 0217895&lt;/i&gt;" name="UserId" class="user-id"/>
         <ui:Label text="&lt;b&gt;Hello&lt;/b&gt; &lt;i&gt;Renata&lt;/i&gt;&lt;b&gt;!&lt;/b&gt;" name="HiUser" class="hi-user"/>
         <ui:VisualElement name="Kit1Card" class="kit-card pos-1">
             <ui:Image name="Kit1Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
-            <ui:Label name="Kit1Status" text="Reserved" class="kit-status status-gray"/>
+            <ui:Label name="Btn1" text="Reserved" class="kit-status status-gray"/>
         </ui:VisualElement>
         <ui:VisualElement name="Kit2Card" class="kit-card pos-2">
             <ui:Image name="Kit2Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
-            <ui:Label name="Kit2Status" text="Reserved" class="kit-status status-gray"/>
+            <ui:Label name="Btn2" text="Reserved" class="kit-status status-gray"/>
         </ui:VisualElement>
         <ui:VisualElement name="Kit3Card" class="kit-card pos-3">
             <ui:Image name="Kit3Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
-            <ui:Label name="Kit3Status" text="Reserved" class="kit-status status-gray"/>
+            <ui:Label name="Btn3" text="Reserved" class="kit-status status-gray"/>
         </ui:VisualElement>
         <ui:VisualElement name="Kit4Card" class="kit-card pos-4">
             <ui:Image name="Kit4Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
-            <ui:Label name="Kit4Status" text="Charging&#10;(Ready in 20 min)" class="kit-status status-yellow"/>
+            <ui:Label name="Btn4" text="Charging&#10;(Ready in 20 min)" class="kit-status status-yellow"/>
         </ui:VisualElement>
         <ui:VisualElement name="Kit5Card" class="kit-card pos-5">
             <ui:Image name="Kit5Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
-            <ui:Label name="Kit5Status" text="Charging&#10;(Ready in 5 min)" class="kit-status status-yellow"/>
+            <ui:Label name="Btn5" text="Charging&#10;(Ready in 5 min)" class="kit-status status-yellow"/>
         </ui:VisualElement>
         <ui:VisualElement name="Kit6Card" class="kit-card pos-6">
             <ui:Image name="Kit6Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
-            <ui:Label name="Kit6Status" text="Loaned" class="kit-status status-gray"/>
+            <ui:Label name="Btn6" text="Loaned" class="kit-status status-gray"/>
         </ui:VisualElement>
-        <!-- Figma: Useful-step. Oculto por defecto (clase 'hidden'); el codigo lo muestra al tocar un kit -->
-        <ui:VisualElement name="UsefulStepOverlay" class="overlay hidden">
-            <ui:Label name="UsefulStepText" class="overlay-text" text="There are currently no available Quest 3 headsets.&#10;&#10;&lt;b&gt;Kit No. 5&lt;/b&gt; is done charging in 5 minutes, would you like to reserve it now?"/>
+        <ui:VisualElement name="UsefulStepOverlay" class="overlay hidden" style="opacity: 1; display: none;">
+            <ui:Label name="UsefulStepText" text="There are currently no available Quest 3 headsets.&#10;&#10;&lt;b&gt;Kit No. 5&lt;/b&gt; is done charging in 5 minutes, would you like to reserve it now?" class="overlay-text"/>
             <ui:Button name="ReserveNowButton" text="Reserve Now" class="btn btn-blue overlay-btn-1"/>
             <ui:Button name="NoThanksButton" text="No Thanks" class="btn btn-gray overlay-btn-2"/>
         </ui:VisualElement>
