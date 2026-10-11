@@ -442,8 +442,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2045396740}
   - component: {fileID: 2045396739}
+  - component: {fileID: 2045396741}
   m_Layer: 5
-  m_Name: UIDocument
+  m_Name: KioskUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -487,6 +488,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2045396741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045396738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04aea0efc3d35bc4fb33b52b7f6c8fab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KioskManager
+  inventory:
+  - kitID: 1
+    status: 1
+    lockerNumber: 1
+  - kitID: 2
+    status: 0
+    lockerNumber: 2
+  - kitID: 3
+    status: 1
+    lockerNumber: 3
+  - kitID: 4
+    status: 2
+    lockerNumber: 4
+  - kitID: 5
+    status: 2
+    lockerNumber: 5
+  - kitID: 6
+    status: 3
+    lockerNumber: 6
+  mainMenuAsset: {fileID: 9197481963319205126, guid: 2ea4b49191c229f4fb495212ac396568, type: 3}
+  mainMenuSelectionAsset: {fileID: 9197481963319205126, guid: c135f5bb84c685642b84dac93ecbb01c, type: 3}
+  borrowPeriodAsset: {fileID: 9197481963319205126, guid: 6d48cc9b621d172469f8b9286961b879, type: 3}
+  borrowPeriodSelectedAsset: {fileID: 9197481963319205126, guid: a30d2a8e7c0173545bd22343fc0860fb, type: 3}
+  summaryAsset: {fileID: 9197481963319205126, guid: 6b2247b6067550642b31ddfc9350a58e, type: 3}
+  endScreenAsset: {fileID: 9197481963319205126, guid: 4865cfb0eac008a4fbe203884abdf520, type: 3}
+  unavailableMainMenuAsset: {fileID: 9197481963319205126, guid: dcf45376173ecdb4f82ec439057f3185, type: 3}
+  alternateSummaryAsset: {fileID: 9197481963319205126, guid: 3dcda078295fc7b46a09eadf8e14ba19, type: 3}
+  confirmationScreenAsset: {fileID: 9197481963319205126, guid: d80390c2d0715584cb79585bf741a5d4, type: 3}
+  lastMainMenuAsset: {fileID: 9197481963319205126, guid: be9834a996695be4cb8da04fa1c25e4f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
