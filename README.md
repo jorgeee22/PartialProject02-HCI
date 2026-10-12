@@ -18,9 +18,9 @@ The kiosk state is stored with `PlayerPrefs`, so it persists between sessions un
 | Original Figma design | [Project-01 on Figma](https://www.figma.com/design/5OQYsNzHx2vwk3AVBOPO9T/Project-01?node-id=23-2&t=ZsEe2tYVGqPVdT5R-1) |
 | GitHub Release (Windows build) | [Quest Checkout v1.0.0](https://github.com/jorgeee22/PartialProject02-HCI/releases/tag/v1.0.0) |
 | Demo video | [TODO: paste video link] |
-| Design report | [design.md](design.md) |
-| Testing report | [testing.md](testing.md) |
-| AI usage log | [ai-use.md](ai-use.md) |
+| Design report | [docs/design.md](docs/design.md) |
+| Testing report | [docs/testing.md](docs/testing.md) |
+| AI usage log | [docs/ai-use.md](docs/ai-use.md) |
 
 ## Team Contributions
 
