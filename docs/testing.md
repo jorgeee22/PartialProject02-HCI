@@ -111,3 +111,9 @@ Actual Result: The system loaded the saved state correctly upon restart.
 Pass/Fail: Pass.
 
 Evidence: ![Persistence](images/test_case6.png)
+
+| Anonymous ID | Task Completion | Time on Task | Number of Errors | Observations | Help Provided |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| User 1 | Yes | 48.93s | 0 | Took a bit to trigger Scenario B. Suggested adding a time tag to "Reserved" kits to show when they become available. | None |
+| User 2 | Yes | 34.73s | 1 | Clicked on the general "Available" area instead of the specific "Select" button. Suggested adding sound effects on screen transitions. | None |
+| User 3 | Yes | 75.00s | 1 | Scenario A was easy thanks to the green "Available" kit. In Scenario B everything looked "Reserved" and she did not realize any kit could be clicked to get the reservation option. | Told her she could click any kit to get the option to reserve. |
