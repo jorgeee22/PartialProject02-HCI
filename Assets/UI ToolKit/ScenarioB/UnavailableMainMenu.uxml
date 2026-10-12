@@ -32,6 +32,7 @@
             <ui:Image name="Kit6Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
             <ui:Label name="Btn6" text="Loaned" class="kit-status status-gray"/>
         </ui:VisualElement>
+        <ui:Button text="No Kits Available? Tap Here to See Best Next Option" name="BestOptionButton" style="top: 924px; width: 320px; left: 805px; height: 62px; font-size: 19px; white-space: normal; -unity-font-style: bold; background-color: rgb(217, 119, 6);"/>
         <ui:VisualElement name="UsefulStepOverlay" class="overlay hidden" style="opacity: 1; display: none;">
             <ui:Label name="UsefulStepText" text="There are currently no available Quest 3 headsets.&#10;&#10;&lt;b&gt;Kit No. 5&lt;/b&gt; is done charging in 5 minutes, would you like to reserve it now?" class="overlay-text"/>
             <ui:Button name="ReserveNowButton" text="Reserve Now" class="btn btn-blue overlay-btn-1"/>

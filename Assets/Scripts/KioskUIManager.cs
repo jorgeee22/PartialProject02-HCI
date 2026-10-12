@@ -43,6 +43,11 @@ public class KioskManager : MonoBehaviour {
     }
 
     private void CheckAvailabilityAndLoadScreen() {
+        if (PlayerPrefs.GetInt("ScenarioBCompleted", 0) == 1) {
+            LoadLastMainMenu();
+            return;
+        }
+
         bool hasAvailableKits = false;
         foreach (var kit in inventory) {
             if (kit.status == KitStatus.Available) {
@@ -52,9 +57,9 @@ public class KioskManager : MonoBehaviour {
         }
 
         if (hasAvailableKits) {
-            LoadMainMenu(); 
+            LoadMainMenu();
         } else {
-            LoadUnavailableMainMenu(); 
+            LoadUnavailableMainMenu();
         }
     }
 
@@ -94,6 +99,15 @@ public class KioskManager : MonoBehaviour {
                 currentlySelectedKitID = 2;
                 LoadMainMenuSelection();
             };
+        }
+
+        Label availableLabel = uiDocument.rootVisualElement.Q<Label>("AvailableClickable");
+        if (availableLabel != null) {
+            availableLabel.pickingMode = PickingMode.Position;
+            availableLabel.RegisterCallback<ClickEvent>(evt => {
+                currentlySelectedKitID = 2;
+                LoadMainMenuSelection();
+            });
         }
 
         Button resetBtn = uiDocument.rootVisualElement.Q<Button>("ResetButton");
@@ -163,16 +177,13 @@ public class KioskManager : MonoBehaviour {
         unavailableMainMenuAsset.CloneTree(uiDocument.rootVisualElement);
 
         VisualElement overlay = uiDocument.rootVisualElement.Q<VisualElement>("UsefulStepOverlay");
-        if (overlay != null) overlay.style.display = DisplayStyle.None; 
+        if (overlay != null) overlay.style.display = DisplayStyle.None;
 
-        for (int i = 1; i <= 6; i++) {
-            Label kitLabel = uiDocument.rootVisualElement.Q<Label>("Btn" + i);
-            if (kitLabel != null) {
-                kitLabel.pickingMode = PickingMode.Position;
-                kitLabel.RegisterCallback<ClickEvent>(evt => {
-                    if (overlay != null) overlay.style.display = DisplayStyle.Flex;
-                });
-            }
+        Button bestOptionBtn = uiDocument.rootVisualElement.Q<Button>("BestOptionButton"); 
+        if (bestOptionBtn != null) {
+            bestOptionBtn.clicked += () => {
+                if (overlay != null) overlay.style.display = DisplayStyle.Flex;
+            };
         }
 
         Button noThanksBtn = uiDocument.rootVisualElement.Q<Button>("NoThanksButton");
@@ -207,12 +218,23 @@ public class KioskManager : MonoBehaviour {
         confirmationScreenAsset.CloneTree(uiDocument.rootVisualElement);
 
         Button doneBtn = uiDocument.rootVisualElement.Q<Button>("DoneButton");
-        if (doneBtn != null) doneBtn.clicked += LoadLastMainMenu;
+        if (doneBtn != null) {
+            doneBtn.clicked += () => {
+                PlayerPrefs.SetInt("ScenarioBCompleted", 1);
+                PlayerPrefs.Save();
+                LoadLastMainMenu();
+            };
+        }
     }
 
     private void LoadLastMainMenu() {
         uiDocument.rootVisualElement.Clear();
         lastMainMenuAsset.CloneTree(uiDocument.rootVisualElement);
+
+        Button resetBtn = uiDocument.rootVisualElement.Q<Button>("ResetButton");
+        if (resetBtn != null) {
+            resetBtn.clicked += ResetKiosk;
+        }
     }
 
     private IEnumerator WaitAndExecute(float delay, System.Action nextAction) {
@@ -222,6 +244,7 @@ public class KioskManager : MonoBehaviour {
 
     private void ResetKiosk() {
         PlayerPrefs.DeleteKey("KioskInventory");
+        PlayerPrefs.DeleteKey("ScenarioBCompleted");
         PlayerPrefs.Save();
 
         currentlySelectedKitID = -1;
