@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss"/>
+    <Style src="project://database/Assets/UI%20ToolKit/ScenarioB/scenarioB.uss?fileID=7433441132597879392&amp;guid=66f575777fdbbdb498ec4d30159dfbfb&amp;type=3#scenarioB"/>
     <ui:VisualElement name="LastMainMenuScreen" class="screen">
         <ui:VisualElement name="Title" class="title-bar">
             <ui:Label text="Quest 3 Kiosk" class="title-text"/>
@@ -31,5 +31,6 @@
             <ui:Image name="Kit6Image" source="project://database/Assets/UI%20ToolKit/Images/Meta-Quest-3-featured.jpg?fileID=2800000&amp;guid=07f79f947a9953340a13de770b5a2ddc&amp;type=3#Meta-Quest-3-featured" class="kit-image"/>
             <ui:Label name="Kit6Status" text="Loaned" class="kit-status status-gray"/>
         </ui:VisualElement>
+        <ui:Button text="Reset Scenarios" name="ResetButton" parse-escape-sequences="false" style="width: 181px; height: 5%; left: 85%; top: 10%; font-size: 22px; -unity-font-style: bold; background-color: rgb(0, 116, 255);"/>
     </ui:VisualElement>
 </ui:UXML>
